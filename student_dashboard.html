@@ -1,0 +1,9 @@
+
+<h2>Student Dashboard</h2>
+<table border="1">
+  <tr><th>Subject</th><th>Score</th></tr>
+  {% for subject, score in results %}
+    <tr><td>{{ subject }}</td><td>{{ score }}</td></tr>
+  {% endfor %}
+</table>
+<a href="/logout">Logout</a>
